@@ -7,17 +7,53 @@ import girl_4 from "../assets/girl_4.png"
 import right from "../assets/right.png"
 import right_2 from "../assets/right 2.png"
 import left from "../assets/left.png"
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import shere from "../assets/left.png"
 import bookmark from "../assets/left.png"
 import Container from "../components/Layer/Container"
 import { CiHeart } from 'react-icons/ci'
+import Slider from 'react-slick'
 const Banner = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
   return (
     <div className='mt-10 '>
         <Container className="flex justify-between">
         <div className="one">
+            
+    {/* <Slider {...settings}>
             <img className='rounded-[17px] ' src={girl} alt="" />
-            <div className="flex gap-5 items-center mt-[37px]">
+            <img className='rounded-[17px] ' src={girl} alt="" />
+            <img className='rounded-[17px] ' src={girl} alt="" />
+            <img className='rounded-[17px] ' src={girl} alt="" />
+    </Slider> */}
+        <Slider {...settings}>
+      <div>
+        <h3>1</h3>
+      </div>
+      <div>
+        <h3>2</h3>
+      </div>
+      <div>
+        <h3>3</h3>
+      </div>
+      <div>
+        <h3>4</h3>
+      </div>
+      <div>
+        <h3>5</h3>
+      </div>
+      <div>
+        <h3>6</h3>
+      </div>
+    </Slider>
+            {/* <div className="flex gap-5 items-center mt-[37px]">
             <img className='rounded-[17px]' src={right} alt="" />
             <img className='border-[3px] border-[#3A4980] rounded-[17px]' src={girl_1} alt="" />
             <img className='rounded-[17px]' src={girl_2} alt="" />
@@ -51,7 +87,7 @@ const Banner = () => {
                         <p className='text-[#D46F77] font-semibold text-base'>109</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
         </div>
         </Container>
     </div>
